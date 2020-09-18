@@ -11,7 +11,7 @@ class App < Sinatra::Base
   post '/checkout' do
     # binding.pry
 
-    @cart = params[:item][:purchase]
+    @cart = params[:items][:purchase]
     #
     # params[:item][:purchase].each do |i|
     #   @cart << i[:item]
