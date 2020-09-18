@@ -12,12 +12,7 @@ class App < Sinatra::Base
     # binding.pry
 
     @cart = params[:items][:purchase]
-    #
-    # params[:item][:purchase].each do |i|
-    #   @cart << i[:item]
-    # end
-    #
-    #
+
     erb :checkout
   end
 end
